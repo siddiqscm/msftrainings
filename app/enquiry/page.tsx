@@ -4,15 +4,15 @@ import { FormEvent, useState, Suspense } from 'react';
 import { useSearchParams } from 'next/navigation';
 
 const certifications = [
-  { code: 'AZ-900', label: 'AZ-900 (Azure Fundamentals)' },
-  { code: 'MS-900', label: 'MS-900 (Microsoft 365 Fundamentals)' },
-  { code: 'PL-900', label: 'PL-900 (Power Platform Fundamentals)' },
   { code: 'MB-800', label: 'MB-800 (Business Central Functional Consultant)' },
   { code: 'MB-820', label: 'MB-820 (Business Central Developer)' },
   { code: 'MB-330', label: 'MB-330 (Supply Chain Management Functional Consultant)' },
   { code: 'MB-335', label: 'MB-335 (Supply Chain Management Expert)' },
   { code: 'MB-500', label: 'MB-500 (Finance & Operations Developer)' },
   { code: 'MB-700', label: 'MB-700 (Finance & Operations Solution Architect)' },
+  { code: 'PL-900', label: 'PL-900 (Power Platform Fundamentals)' },
+  { code: 'AZ-900', label: 'AZ-900 (Azure Fundamentals)' },
+  { code: 'MS-900', label: 'MS-900 (Microsoft 365 Fundamentals)' },
 ];
 
 const trainingTypes = [

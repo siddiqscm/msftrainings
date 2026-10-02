@@ -3,24 +3,6 @@ import CourseCard from '@/components/CourseCard';
 
 const courses = [
   {
-    code: 'AZ-900',
-    title: 'Azure Fundamentals',
-    shortDescription: 'Start your cloud journey. Core cloud concepts, Azure services, security, pricing and governance, with guided portal demos.',
-    track: 'Azure',
-  },
-  {
-    code: 'MS-900',
-    title: 'Microsoft 365 Fundamentals',
-    shortDescription: 'Understand Microsoft 365 apps, Teams, Copilot, identity, security, compliance and licensing in one focused course.',
-    track: 'Microsoft 365',
-  },
-  {
-    code: 'PL-900',
-    title: 'Power Platform Fundamentals',
-    shortDescription: 'Build apps, flows, reports and agents with Power Apps, Power Automate, Power BI and Copilot Studio in hands-on labs.',
-    track: 'Power Platform',
-  },
-  {
     code: 'MB-800',
     title: 'Business Central Functional Consultant',
     shortDescription: 'Master Microsoft Dynamics 365 Business Central with hands-on labs covering core functional concepts, implementation, and configuration.',
@@ -55,6 +37,24 @@ const courses = [
     title: 'Finance and Operations Apps Solution Architect',
     shortDescription: 'Design enterprise solutions at the architect level. Strategic planning, system integration, and solution governance principles.',
     track: 'Finance & Operations',
+  },
+  {
+    code: 'PL-900',
+    title: 'Power Platform Fundamentals',
+    shortDescription: 'Build apps, flows, reports and agents with Power Apps, Power Automate, Power BI and Copilot Studio in hands-on labs.',
+    track: 'Power Platform',
+  },
+  {
+    code: 'AZ-900',
+    title: 'Azure Fundamentals',
+    shortDescription: 'Start your cloud journey. Core cloud concepts, Azure services, security, pricing and governance, with guided portal demos.',
+    track: 'Azure',
+  },
+  {
+    code: 'MS-900',
+    title: 'Microsoft 365 Fundamentals',
+    shortDescription: 'Understand Microsoft 365 apps, Teams, Copilot, identity, security, compliance and licensing in one focused course.',
+    track: 'Microsoft 365',
   },
 ];
 

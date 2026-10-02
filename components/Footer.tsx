@@ -26,13 +26,8 @@ export default function Footer() {
             <h3 className="font-semibold text-white mb-4">Certifications</h3>
             <ul className="space-y-3 text-sm">
               <li>
-                <Link href="/courses/az-900" className="text-slate-300 hover:text-white transition-colors">
-                  Azure Fundamentals (AZ-900)
-                </Link>
-              </li>
-              <li>
-                <Link href="/courses/ms-900" className="text-slate-300 hover:text-white transition-colors">
-                  Microsoft 365 Fundamentals (MS-900)
+                <Link href="/courses" className="text-slate-300 hover:text-white transition-colors">
+                  Dynamics 365 ERP
                 </Link>
               </li>
               <li>
@@ -41,8 +36,13 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/courses" className="text-slate-300 hover:text-white transition-colors">
-                  Dynamics 365
+                <Link href="/courses/az-900" className="text-slate-300 hover:text-white transition-colors">
+                  Azure Fundamentals (AZ-900)
+                </Link>
+              </li>
+              <li>
+                <Link href="/courses/ms-900" className="text-slate-300 hover:text-white transition-colors">
+                  Microsoft 365 Fundamentals (MS-900)
                 </Link>
               </li>
               <li>
