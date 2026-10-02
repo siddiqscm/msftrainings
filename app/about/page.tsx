@@ -2,14 +2,14 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'About Microsoft Dynamics 365 Training | Certified Trainers',
-  description: 'Learn about Microsoft Dynamics 365 Training. Certified corporate trainers delivering enterprise-grade Dynamics 365 certification training with proven success rates.',
+  title: 'About MSFT Trainings | Certified Microsoft Trainers',
+  description: 'Learn about MSFT Trainings. Certified corporate trainers delivering Microsoft certification training across Azure, Microsoft 365, Power Platform, Dynamics 365 and Security.',
   keywords: 'about Microsoft Dynamics 365 training, certified trainers, training company, Dynamics 365 experts, training mission, training values',
   openGraph: {
-    title: 'About Microsoft Dynamics 365 Training',
+    title: 'About MSFT Trainings',
     description: 'Enterprise-grade Microsoft Dynamics 365 training delivered by certified experts.',
     type: 'website',
-    url: 'https://msftrainings.com/about',
+    url: 'https://msfttrainings.com/about',
   },
 };
 
@@ -63,7 +63,7 @@ export default function AboutPage() {
   return (
     <>
       {/* Page Header */}
-      <section className="bg-gradient-to-r from-blue-600 to-blue-800 text-white py-16">
+      <section className="bg-blue-900 text-white py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h1 className="text-4xl sm:text-5xl font-bold mb-4">About Us</h1>
           <p className="text-xl text-slate-200 max-w-2xl">
@@ -239,7 +239,7 @@ export default function AboutPage() {
       <section className="bg-blue-900 text-white py-16">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl sm:text-4xl font-bold mb-6">
-            Ready to Build Your D365 Expertise?
+            Ready to Build Your Microsoft Expertise?
           </h2>
           <p className="text-lg text-slate-200 mb-8">
             Contact us to discuss your training needs and discover how we can help you achieve certification success.

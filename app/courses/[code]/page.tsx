@@ -311,7 +311,7 @@ export async function generateMetadata({ params }: { params: { code: string } })
       title: `${course.code} - ${course.title}`,
       description: course.description,
       type: 'website',
-      url: `https://msftrainings.com/courses/${params.code.toLowerCase()}`,
+      url: `https://msfttrainings.com/courses/${params.code.toLowerCase()}`,
     },
   };
 }
@@ -332,7 +332,7 @@ export default function CourseDetailPage({ params }: CoursePageProps) {
   return (
     <>
       {/* Header */}
-      <section className="bg-gradient-to-br from-blue-600 to-blue-700 text-white py-16">
+      <section className="bg-blue-900 text-white py-16">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <p className="text-sm font-mono font-bold text-blue-200 mb-2">
             {course.code}

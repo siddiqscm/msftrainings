@@ -2,6 +2,7 @@
 
 import Link from 'next/link';
 import { useState } from 'react';
+import LogoMark from './LogoMark';
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -19,12 +20,15 @@ export default function Header() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-2 group">
-            <div className="w-10 h-10 bg-gradient-to-br from-navy-600 to-navy-800 rounded-lg flex items-center justify-center">
-              <span className="text-white font-bold text-lg">D365</span>
-            </div>
-            <span className="hidden sm:inline text-sm font-semibold text-navy-900">
-              Dynamics 365 Training
+          <Link href="/" className="flex items-center gap-3 group" aria-label="MSFT Trainings home">
+            <LogoMark className="w-10 h-10" />
+            <span className="flex flex-col leading-tight">
+              <span className="text-lg font-bold text-indigo-950">
+                MSFT <span className="font-normal text-indigo-700">Trainings</span>
+              </span>
+              <span className="hidden sm:inline text-xs text-slate-500">
+                Your Path to Mastering Microsoft
+              </span>
             </span>
           </Link>
 

@@ -1,6 +1,6 @@
 import type { MetadataRoute } from 'next';
 
-const BASE_URL = 'https://msftrainings.com';
+const BASE_URL = 'https://msfttrainings.com';
 
 const courses = [
   { code: 'mb-800', lastModified: new Date('2026-01-01') },

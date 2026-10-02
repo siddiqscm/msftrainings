@@ -2,14 +2,14 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Our Training Approach | Dynamics 365 Certification Methodology',
+  title: 'Our Training Approach | MSFT Trainings',
   description: 'Discover our proven 5-pillar training methodology. Hands-on labs, certified trainers, exam-oriented curriculum, corporate customization, and small batch training for Dynamics 365 certifications.',
   keywords: 'training methodology, hands-on labs, certified trainers, Dynamics 365 approach, training process, exam preparation',
   openGraph: {
-    title: 'Our Training Approach | Dynamics 365 Certification',
+    title: 'Our Training Approach | MSFT Trainings',
     description: 'Proven methodology delivering practical hands-on training with certified experts.',
     type: 'website',
-    url: 'https://msftrainings.com/methodology',
+    url: 'https://msfttrainings.com/methodology',
   },
 };
 
@@ -98,7 +98,7 @@ export default function MethodologyPage() {
   return (
     <>
       {/* Page Header */}
-      <section className="bg-gradient-to-r from-blue-600 to-blue-800 text-white py-16">
+      <section className="bg-blue-900 text-white py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h1 className="text-4xl sm:text-5xl font-bold mb-4">
             Our Training Approach
@@ -240,7 +240,7 @@ export default function MethodologyPage() {
               </div>
               <div className="bg-gradient-to-br from-navy-50 to-slate-50 rounded-lg p-8 border border-navy-200">
                 <p className="text-4xl font-bold text-navy-600 mb-2">10+</p>
-                <p className="text-slate-600">Average years of D365 experience per trainer</p>
+                <p className="text-slate-600">Average years of Microsoft platform experience per trainer</p>
               </div>
             </div>
           </div>

@@ -75,7 +75,7 @@ function EnquiryFormContent() {
   return (
     <>
       {/* Page Header */}
-      <section className="bg-gradient-to-r from-blue-600 to-blue-800 text-white py-16">
+      <section className="bg-blue-900 text-white py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h1 className="text-4xl sm:text-5xl font-bold mb-4">
             Request Training
@@ -282,10 +282,10 @@ function EnquiryFormContent() {
                     </p>
                     <p className="text-slate-900 font-medium">
                       <a
-                        href="mailto:training@msftrainings.com"
+                        href="mailto:training@msfttrainings.com"
                         className="text-navy-600 hover:text-navy-700"
                       >
-                        training@msftrainings.com
+                        training@msfttrainings.com
                       </a>
                     </p>
                   </div>

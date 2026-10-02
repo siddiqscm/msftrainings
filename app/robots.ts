@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: '/',
       disallow: '/api/',
     },
-    sitemap: 'https://msftrainings.com/sitemap.xml',
+    sitemap: 'https://msfttrainings.com/sitemap.xml',
   };
 }

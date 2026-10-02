@@ -96,17 +96,17 @@ export default function Home() {
   return (
     <>
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-blue-600 via-blue-700 to-blue-800 text-white py-24 sm:py-32">
+      <section className="bg-blue-900 text-white py-24 sm:py-32">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl">
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold leading-tight mb-6 animate-fade-in">
-              Enterprise-Grade Microsoft Dynamics 365 Training
+              Your Path to Mastering Microsoft
             </h1>
             <p className="text-lg sm:text-xl text-slate-200 mb-8 leading-relaxed animate-fade-in" style={{ animationDelay: '0.1s' }}>
-              Practical Hands-on Instruction by Certified Corporate Trainers
+              Azure · Microsoft 365 · Power Platform · Dynamics 365 · Security
             </p>
             <p className="text-base sm:text-lg text-slate-300 mb-10 leading-relaxed max-w-2xl animate-fade-in" style={{ animationDelay: '0.2s' }}>
-              Prepare for Microsoft Dynamics 365 certification exams with intensive, instructor-led training that combines real-world scenarios, expert guidance, and comprehensive exam readiness.
+              Prepare for Microsoft certification exams with intensive, instructor-led training from Certified Corporate Trainers, combining hands-on labs, real-world scenarios and complete exam readiness.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 animate-fade-in" style={{ animationDelay: '0.3s' }}>
               <Link

@@ -1,0 +1,7 @@
+<svg viewBox="0 0 520 120" xmlns="http://www.w3.org/2000/svg" font-family="Segoe UI, Arial, sans-serif">
+  <rect x="10" y="10" width="100" height="100" rx="22" fill="#312E81"/>
+  <polyline points="26,90 46,90 46,72 64,72 64,54 82,54 82,40" fill="none" stroke="#FFFFFF" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="82" cy="28" r="9" fill="#FBBF24"/>
+  <text x="135" y="62" font-size="38" font-weight="700" fill="#1E1B4B">MSFT <tspan fill="#4338CA" font-weight="400">Trainings</tspan></text>
+  <text x="137" y="92" font-size="16" fill="#64748B" letter-spacing="0.5">Your Path to Mastering Microsoft</text>
+</svg>

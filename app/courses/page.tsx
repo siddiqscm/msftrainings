@@ -2,14 +2,14 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Microsoft Dynamics 365 Certification Courses | MB-800, MB-820, MB-330, MB-335, MB-500, MB-700',
+  title: 'Microsoft Certification Courses | MSFT Trainings',
   description: 'Comprehensive Dynamics 365 certification training programs: Business Central (MB-800, MB-820), Supply Chain Management (MB-330, MB-335), Finance & Operations (MB-500, MB-700). Instructor-led hands-on labs.',
   keywords: 'Dynamics 365 courses, MB-800 training, MB-820 course, MB-330 certification, MB-335 expert, MB-500 developer, MB-700 architect, Microsoft Dynamics training',
   openGraph: {
-    title: 'Dynamics 365 Certification Courses | 6 Training Programs',
+    title: 'Microsoft Certification Courses | MSFT Trainings',
     description: 'Hands-on Dynamics 365 certification training for all 6 exam codes. Business Central, Supply Chain Management, Finance & Operations.',
     type: 'website',
-    url: 'https://msftrainings.com/courses',
+    url: 'https://msfttrainings.com/courses',
   },
 };
 
@@ -112,7 +112,7 @@ export default function CoursesPage() {
   return (
     <>
       {/* Page Header */}
-      <section className="bg-gradient-to-r from-blue-600 to-blue-800 text-white py-16">
+      <section className="bg-blue-900 text-white py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h1 className="text-4xl sm:text-5xl font-bold mb-4">
             Microsoft Dynamics 365 Certification Courses
