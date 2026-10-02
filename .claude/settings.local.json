@@ -19,7 +19,12 @@
       "PowerShell(winget install GitHub.cli --accept-source-agreements --accept-package-agreements)",
       "PowerShell(gh auth login)",
       "PowerShell(& \"C:\\\\Program Files\\\\GitHub CLI\\\\gh.exe\" auth login)",
-      "PowerShell(winget install Git.Git --accept-source-agreements --accept-package-agreements -h)"
+      "PowerShell(winget install Git.Git --accept-source-agreements --accept-package-agreements -h)",
+      "PowerShell($env:PATH += \";C:\\\\Program Files\\\\Git\\\\cmd\"; cd \"C:\\\\Users\\\\siddiq.mohammed\\\\OneDrive - JIVA Internet Solutions Private Ltd\\\\Training\"; & \"C:\\\\Program Files\\\\GitHub CLI\\\\gh.exe\" repo sync)",
+      "PowerShell($env:PATH += \";C:\\\\Program Files\\\\Git\\\\cmd;C:\\\\Program Files\\\\Git\\\\bin\"; cd \"C:\\\\Users\\\\siddiq.mohammed\\\\OneDrive - JIVA Internet Solutions Private Ltd\\\\Training\"; git config --global credential.helper $\\(& \"C:\\\\Program Files\\\\GitHub CLI\\\\gh.exe\" auth status -t 2>&1 | findstr token\\); git push -u origin main 2>&1 | head -30)",
+      "PowerShell($env:PATH = \"C:\\\\Program Files\\\\Git\\\\cmd;C:\\\\Program Files\\\\Git\\\\bin;$env:PATH\"; cd \"C:\\\\Users\\\\siddiq.mohammed\\\\OneDrive - JIVA Internet Solutions Private Ltd\\\\Training\"; git config --global credential.helper \"C:\\\\Program Files\\\\GitHub CLI\\\\gh.exe\"; git push -u origin main 2>&1)",
+      "PowerShell(cd \"C:\\\\Users\\\\siddiq.mohammed\\\\OneDrive - JIVA Internet Solutions Private Ltd\\\\Training\"; $env:PATH = \"C:\\\\Program Files\\\\Git\\\\cmd;C:\\\\Program Files\\\\Git\\\\bin;$env:PATH\"; git config --global credential.helper \"\"\"C:\\\\Program Files\\\\GitHub CLI\\\\gh.exe\"\"\" ; git push -u origin main)",
+      "PowerShell(Test-Path \"$env:USERPROFILE\\\\.ssh\\\\id_rsa\")"
     ]
   }
 }
