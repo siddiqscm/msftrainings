@@ -26,8 +26,13 @@ export default function Footer() {
             <h3 className="font-semibold text-white mb-4">Certifications</h3>
             <ul className="space-y-3 text-sm">
               <li>
-                <Link href="/courses" className="text-slate-300 hover:text-white transition-colors">
+                <Link href="/courses#dynamics-365-erp" className="text-slate-300 hover:text-white transition-colors">
                   Dynamics 365 ERP
+                </Link>
+              </li>
+              <li>
+                <Link href="/courses#dynamics-365-ce" className="text-slate-300 hover:text-white transition-colors">
+                  Dynamics 365 CE (CRM)
                 </Link>
               </li>
               <li>

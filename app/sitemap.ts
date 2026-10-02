@@ -3,6 +3,14 @@ import type { MetadataRoute } from 'next';
 const BASE_URL = 'https://msfttrainings.com';
 
 const courses = [
+  { code: 'mb-910', lastModified: new Date('2026-10-02') },
+  { code: 'mb-280', lastModified: new Date('2026-10-02') },
+  { code: 'mb-230', lastModified: new Date('2026-10-02') },
+  { code: 'mb-240', lastModified: new Date('2026-10-02') },
+  { code: 'mb-260', lastModified: new Date('2026-10-02') },
+  { code: 'pl-200', lastModified: new Date('2026-10-02') },
+  { code: 'pl-400', lastModified: new Date('2026-10-02') },
+  { code: 'pl-600', lastModified: new Date('2026-10-02') },
   { code: 'az-900', lastModified: new Date('2026-10-02') },
   { code: 'ms-900', lastModified: new Date('2026-10-02') },
   { code: 'pl-900', lastModified: new Date('2026-10-02') },

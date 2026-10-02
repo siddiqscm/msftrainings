@@ -39,6 +39,54 @@ const courses = [
     track: 'Finance & Operations',
   },
   {
+    code: 'MB-910',
+    title: 'Dynamics 365 Fundamentals (CRM)',
+    shortDescription: 'Overview of Dynamics 365 Sales, Customer Service, Field Service and Customer Insights on Dataverse and Power Platform.',
+    track: 'Dynamics 365 CE',
+  },
+  {
+    code: 'MB-280',
+    title: 'Customer Experience Analyst',
+    shortDescription: 'Configure Dynamics 365 Sales and Customer Insights - Journeys for pipeline, forecasting, Copilot and personalised engagement.',
+    track: 'Dynamics 365 CE',
+  },
+  {
+    code: 'MB-230',
+    title: 'Customer Service Functional Consultant',
+    shortDescription: 'Implement cases, knowledge, SLAs, unified routing, omnichannel engagement and Copilot for service agents.',
+    track: 'Dynamics 365 CE',
+  },
+  {
+    code: 'MB-240',
+    title: 'Field Service Functional Consultant',
+    shortDescription: 'Implement work orders, resource scheduling, inventory, agreements, the mobile app and connected field service.',
+    track: 'Dynamics 365 CE',
+  },
+  {
+    code: 'MB-260',
+    title: 'Customer Insights (Data) Specialist',
+    shortDescription: 'Unify customer data into profiles, build segments and measures, use AI predictions and activate insights.',
+    track: 'Dynamics 365 CE',
+  },
+  {
+    code: 'PL-200',
+    title: 'Power Platform Functional Consultant',
+    shortDescription: 'Configure the Dataverse foundation of Dynamics 365 CE: data model, model-driven apps, security and automation.',
+    track: 'Dynamics 365 CE',
+  },
+  {
+    code: 'PL-400',
+    title: 'Power Platform Developer',
+    shortDescription: 'Extend Dynamics 365 CE with plug-ins, JavaScript, PCF controls, custom connectors, Web API and Azure integration.',
+    track: 'Dynamics 365 CE',
+  },
+  {
+    code: 'PL-600',
+    title: 'Power Platform Solution Architect',
+    shortDescription: 'Architect enterprise CE solutions: requirements, data, integration, security, ALM and governance.',
+    track: 'Dynamics 365 CE',
+  },
+  {
     code: 'PL-900',
     title: 'Power Platform Fundamentals',
     shortDescription: 'Build apps, flows, reports and agents with Power Apps, Power Automate, Power BI and Copilot Studio in hands-on labs.',
@@ -165,7 +213,7 @@ export default function Home() {
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 max-w-4xl mx-auto">
             <div className="text-center">
               <div className="text-4xl mb-2">✅</div>
-              <p className="text-3xl sm:text-4xl font-bold text-blue-600 mb-2">9+</p>
+              <p className="text-3xl sm:text-4xl font-bold text-blue-600 mb-2">17+</p>
               <p className="text-sm text-slate-600 font-medium">Certification Tracks</p>
             </div>
             <div className="text-center">

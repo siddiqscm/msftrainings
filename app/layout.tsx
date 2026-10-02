@@ -11,7 +11,7 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   title: 'MSFT Trainings | Your Path to Mastering Microsoft',
   description: 'Instructor-led Microsoft certification training across Azure, Microsoft 365, Power Platform, Dynamics 365 and Security. Hands-on labs, exam-oriented curriculum and Certified Corporate Trainers.',
-  keywords: 'Microsoft certification training, Azure training, Microsoft 365 training, Power Platform training, Dynamics 365 training, Microsoft Security training, AZ-900, MS-900, PL-900, MB-800, MB-820, MB-330, MB-335, MB-500, MB-700',
+  keywords: 'Microsoft certification training, Azure training, Microsoft 365 training, Power Platform training, Dynamics 365 training, Microsoft Security training, Dynamics 365 CE training, MB-910, MB-280, MB-230, MB-240, MB-260, PL-200, PL-400, PL-600, AZ-900, MS-900, PL-900, MB-800, MB-820, MB-330, MB-335, MB-500, MB-700',
   authors: [{ name: 'MSFT Trainings' }],
   openGraph: {
     type: 'website',
@@ -57,6 +57,22 @@ export default function RootLayout({
     '@context': 'https://schema.org',
     '@type': 'ItemList',
     itemListElement: [
+      ...[
+        ['MB-910', 'Dynamics 365 Fundamentals (CRM)', 'Overview of Dynamics 365 customer engagement apps on Dataverse and Power Platform.'],
+        ['MB-280', 'Dynamics 365 Customer Experience Analyst', 'Configure Dynamics 365 Sales and Customer Insights - Journeys.'],
+        ['MB-230', 'Dynamics 365 Customer Service Functional Consultant', 'Implement cases, knowledge, SLAs, unified routing and omnichannel.'],
+        ['MB-240', 'Dynamics 365 Field Service Functional Consultant', 'Implement work orders, scheduling, inventory and the mobile app.'],
+        ['MB-260', 'Customer Insights (Data) Specialist', 'Unify customer data, build segments and activate insights.'],
+        ['PL-200', 'Power Platform Functional Consultant', 'Configure Dataverse, model-driven apps, security and automation.'],
+        ['PL-400', 'Power Platform Developer', 'Extend Dynamics 365 CE with plug-ins, PCF controls and integrations.'],
+        ['PL-600', 'Power Platform Solution Architect', 'Architect enterprise Dynamics 365 CE and Power Platform solutions.'],
+      ].map(([code, name, description]) => ({
+        '@type': 'Course',
+        name: `${code}: ${name}`,
+        description,
+        provider: { '@type': 'Organization', name: 'MSFT Trainings' },
+        url: `https://msfttrainings.com/courses/${code.toLowerCase()}`,
+      })),
       {
         '@type': 'Course',
         name: 'AZ-900: Microsoft Azure Fundamentals',

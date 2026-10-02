@@ -3,8 +3,8 @@ import Link from 'next/link';
 
 export const metadata: Metadata = {
   title: 'Microsoft Certification Courses | MSFT Trainings',
-  description: 'Instructor-led Microsoft certification training: Azure Fundamentals (AZ-900), Microsoft 365 Fundamentals (MS-900), Power Platform Fundamentals (PL-900), and Dynamics 365 Business Central (MB-800, MB-820), Supply Chain Management (MB-330, MB-335), Finance & Operations (MB-500, MB-700).',
-  keywords: 'AZ-900 training, MS-900 training, PL-900 training, Azure Fundamentals, Microsoft 365 Fundamentals, Power Platform Fundamentals, Dynamics 365 courses, MB-800 training, MB-820 course, MB-330 certification, MB-335 expert, MB-500 developer, MB-700 architect',
+  description: 'Instructor-led Microsoft certification training: Dynamics 365 ERP (MB-800, MB-820, MB-330, MB-335, MB-500, MB-700), Dynamics 365 CE (MB-910, MB-280, MB-230, MB-240, MB-260, PL-200, PL-400, PL-600), Power Platform (PL-900), Azure (AZ-900) and Microsoft 365 (MS-900).',
+  keywords: 'Dynamics 365 CE training, Dynamics 365 CRM training, MB-910 training, MB-280 training, MB-230 training, MB-240 training, MB-260 training, PL-200 training, PL-400 training, PL-600 training, AZ-900 training, MS-900 training, PL-900 training, Azure Fundamentals, Microsoft 365 Fundamentals, Power Platform Fundamentals, Dynamics 365 courses, MB-800 training, MB-820 course, MB-330 certification, MB-335 expert, MB-500 developer, MB-700 architect',
   openGraph: {
     title: 'Microsoft Certification Courses | MSFT Trainings',
     description: 'Hands-on Microsoft certification training across Azure, Microsoft 365, Power Platform and Dynamics 365.',
@@ -107,6 +107,128 @@ const courseDetails = [
     prerequisites: 'Senior development/implementation experience, MB-500 or equivalent background',
   },
   {
+    code: 'MB-910',
+    title: 'Microsoft Dynamics 365 Fundamentals (CRM)',
+    description: 'Get a clear overview of the Dynamics 365 customer engagement apps: Sales, Customer Service, Field Service, Customer Insights and the shared platform beneath them.',
+    outcomes: [
+      'Describe Dynamics 365 Sales, Customer Service, Field Service and Customer Insights',
+      'Explain shared capabilities in Dataverse and Power Platform',
+      'Follow core CRM processes from lead to service resolution',
+      'Describe Copilot and AI features across CE apps',
+      'Understand reporting, integration and security fundamentals',
+    ],
+    audience: 'Business users, new CE consultants and developers, project managers, and IT professionals new to Dynamics 365 customer engagement.',
+    format: 'Instructor-led • 1-2 Days • Live App Walkthroughs • Exam Practice',
+    prerequisites: 'None. General business process awareness helpful',
+  },
+  {
+    code: 'MB-280',
+    title: 'Microsoft Dynamics 365 Customer Experience Analyst',
+    description: 'Configure Dynamics 365 Sales and Customer Insights to manage the full customer journey, from lead capture and pipeline to personalised engagement.',
+    outcomes: [
+      'Configure Dynamics 365 Sales processes, products and pricing',
+      'Set up forecasting, sales accelerator and Copilot for sellers',
+      'Build segments, journeys and lead scoring in Customer Insights - Journeys',
+      'Customise Dataverse tables, forms, views and security',
+      'Deliver reporting with dashboards and Power BI',
+    ],
+    audience: 'Functional consultants, CRM analysts, sales operations and marketing operations professionals.',
+    format: 'Instructor-led • 4-5 Days • Hands-on Labs • Real-world Scenarios',
+    prerequisites: 'MB-910 or equivalent Dynamics 365 CE familiarity recommended',
+  },
+  {
+    code: 'MB-230',
+    title: 'Microsoft Dynamics 365 Customer Service Functional Consultant',
+    shortTitle: 'Customer Service Functional Consultant',
+    description: 'Implement Dynamics 365 Customer Service and Contact Center: cases, knowledge, SLAs, unified routing, omnichannel engagement and Copilot for agents.',
+    outcomes: [
+      'Configure case management, queues and routing rules',
+      'Implement knowledge management and self-service',
+      'Set up entitlements and service-level agreements',
+      'Configure omnichannel engagement and the Customer Service workspace',
+      'Use Copilot, analytics and dashboards to improve service',
+    ],
+    audience: 'Functional consultants, service operations leads, contact centre managers and CRM analysts.',
+    format: 'Instructor-led • 4-5 Days • Hands-on Labs • Contact Centre Scenarios',
+    prerequisites: 'MB-910 or equivalent Dynamics 365 CE familiarity recommended',
+  },
+  {
+    code: 'MB-240',
+    title: 'Microsoft Dynamics 365 Field Service Functional Consultant',
+    shortTitle: 'Field Service Functional Consultant',
+    description: 'Implement Dynamics 365 Field Service: work orders, resource scheduling, inventory, agreements, the mobile app and connected field service.',
+    outcomes: [
+      'Configure work orders, incident types and service tasks',
+      'Set up resources, skills, territories and scheduling',
+      'Manage inventory, purchasing and returns',
+      'Create agreements for recurring and preventive service',
+      'Configure the mobile app, customer assets and connected field service',
+    ],
+    audience: 'Functional consultants, service delivery managers, dispatch leads and CRM analysts.',
+    format: 'Instructor-led • 4-5 Days • Hands-on Labs • Service Operations Scenarios',
+    prerequisites: 'MB-910 or equivalent Dynamics 365 CE familiarity recommended',
+  },
+  {
+    code: 'MB-260',
+    title: 'Microsoft Customer Insights (Data) Specialist',
+    description: 'Implement Dynamics 365 Customer Insights - Data to unify customer data, build profiles, measures and segments, and activate insights across the business.',
+    outcomes: [
+      'Ingest and prepare data from multiple sources',
+      'Unify data into customer profiles with match and merge rules',
+      'Build measures, segments and enrichments',
+      'Use AI predictions such as churn and lifetime value',
+      'Activate insights in Dynamics 365 and external destinations',
+    ],
+    audience: 'Data analysts, marketing technologists, functional consultants and data engineers.',
+    format: 'Instructor-led • 3-4 Days • Hands-on Data Labs • Real-world Scenarios',
+    prerequisites: 'Familiarity with Dynamics 365 CE and basic data concepts recommended',
+  },
+  {
+    code: 'PL-200',
+    title: 'Microsoft Power Platform Functional Consultant',
+    description: 'Configure the Dataverse and Power Platform foundation of Dynamics 365 CE: data model, model-driven apps, security, automation, Copilot Studio and reporting.',
+    outcomes: [
+      'Design and configure the Dataverse data model',
+      'Build model-driven and canvas apps',
+      'Configure security roles, business units and teams',
+      'Automate processes with Power Automate and business process flows',
+      'Build Copilot Studio agents and Power BI reports',
+    ],
+    audience: 'Dynamics 365 CE functional consultants, business analysts and power users.',
+    format: 'Instructor-led • 5 Days • Hands-on Labs • CE Implementation Scenarios',
+    prerequisites: 'PL-900 or MB-910 recommended',
+  },
+  {
+    code: 'PL-400',
+    title: 'Microsoft Power Platform Developer',
+    description: 'Extend Dynamics 365 CE and Power Platform with code: plug-ins, client scripting, PCF controls, custom connectors, Web API and Azure integration.',
+    outcomes: [
+      'Design technical architecture for Power Platform and CE solutions',
+      'Develop plug-ins and custom APIs in C#',
+      'Extend the user experience with JavaScript and PCF controls',
+      'Integrate using Web API, custom connectors and Azure services',
+      'Implement ALM with solutions, pipelines and source control',
+    ],
+    audience: 'Developers and technical consultants building and extending Dynamics 365 CE and Power Platform solutions.',
+    format: 'Instructor-led • 5 Days • Advanced Coding Labs • Real-world Development Scenarios',
+    prerequisites: 'Programming experience in C# and JavaScript; PL-200 knowledge helpful',
+  },
+  {
+    code: 'PL-600',
+    title: 'Microsoft Power Platform Solution Architect',
+    description: 'Architect enterprise Dynamics 365 CE and Power Platform solutions: requirements, solution design, data, integration, security, ALM and governance.',
+    outcomes: [
+      'Lead discovery, requirements and fit-gap analysis',
+      'Design data model, integration and security architecture',
+      'Define environment strategy, ALM and governance',
+      'Plan data migration, testing and go-live',
+      'Guide teams and stakeholders through implementation',
+    ],
+    audience: 'Solution architects, senior functional and technical consultants, and technical leads.',
+    format: 'Instructor-led • 5 Days • Design Workshops • Enterprise Case Studies',
+    prerequisites: 'Experience as a CE functional consultant or developer; PL-200 or PL-400 recommended',
+  },
+  {
     code: 'PL-900',
     title: 'Microsoft Power Platform Fundamentals',
     description: 'Learn how Power Apps, Power Automate, Power BI and Copilot Studio work together to analyze data, automate processes and build business solutions.',
@@ -153,6 +275,39 @@ const courseDetails = [
   },
 ];
 
+const sections = [
+  {
+    id: 'dynamics-365-erp',
+    title: 'Dynamics 365 ERP',
+    subtitle: 'Business Central, Supply Chain Management, Finance & Operations',
+    codes: ['MB-800', 'MB-820', 'MB-330', 'MB-335', 'MB-500', 'MB-700'],
+  },
+  {
+    id: 'dynamics-365-ce',
+    title: 'Dynamics 365 CE (CRM)',
+    subtitle: 'Functional: Sales, Customer Service, Field Service, Customer Insights. Technical: Developer and Solution Architect',
+    codes: ['MB-910', 'MB-280', 'MB-230', 'MB-240', 'MB-260', 'PL-200', 'PL-400', 'PL-600'],
+  },
+  {
+    id: 'power-platform',
+    title: 'Power Platform',
+    subtitle: 'Power Apps, Power Automate, Power BI, Copilot Studio',
+    codes: ['PL-900'],
+  },
+  {
+    id: 'azure',
+    title: 'Azure',
+    subtitle: 'Cloud fundamentals',
+    codes: ['AZ-900'],
+  },
+  {
+    id: 'microsoft-365',
+    title: 'Microsoft 365',
+    subtitle: 'Modern workplace fundamentals',
+    codes: ['MS-900'],
+  },
+];
+
 export default function CoursesPage() {
   return (
     <>
@@ -171,8 +326,27 @@ export default function CoursesPage() {
       {/* Courses List */}
       <section className="py-16">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          {/* Section Jump Links */}
+          <nav aria-label="Course categories" className="flex flex-wrap gap-3 mb-12">
+            {sections.map((section) => (
+              <a
+                key={section.id}
+                href={`#${section.id}`}
+                className="px-4 py-2 text-sm font-semibold text-blue-900 bg-blue-50 border border-blue-200 rounded-full hover:bg-blue-100 transition-colors"
+              >
+                {section.title}
+              </a>
+            ))}
+          </nav>
+
+          {sections.map((section) => (
+          <div key={section.id} id={section.id} className="scroll-mt-24 mb-16">
+          <div className="mb-8 pb-4 border-b-2 border-blue-900">
+            <h2 className="text-3xl font-bold text-blue-900">{section.title}</h2>
+            <p className="text-slate-600 mt-1">{section.subtitle}</p>
+          </div>
           <div className="space-y-12">
-            {courseDetails.map((course) => (
+            {courseDetails.filter((course) => section.codes.includes(course.code)).map((course) => (
               <div
                 key={course.code}
                 className="bg-white rounded-lg border border-slate-200 p-8 sm:p-10 hover:shadow-lg transition-shadow"
@@ -182,11 +356,11 @@ export default function CoursesPage() {
                   <p className="text-sm font-mono font-bold text-blue-600 mb-2">
                     {course.code}
                   </p>
-                  <h2 className="text-2xl sm:text-3xl font-bold text-blue-900 mb-3">
+                  <h3 className="text-2xl sm:text-3xl font-bold text-blue-900 mb-3">
                     <Link href={`/courses/${course.code.toLowerCase()}`} className="hover:text-blue-700">
                       {course.shortTitle || course.title}
                     </Link>
-                  </h2>
+                  </h3>
                   <p className="text-slate-600 leading-relaxed">
                     {course.description}
                   </p>
@@ -251,6 +425,8 @@ export default function CoursesPage() {
               </div>
             ))}
           </div>
+          </div>
+          ))}
 
           {/* Bottom CTA */}
           <div className="mt-16 pt-12 border-t border-slate-200 text-center">
