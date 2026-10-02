@@ -1,0 +1,23 @@
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="200" height="200" fill="#0078D4" rx="8"/>
+
+  <!-- Microsoft Fluent Grid Icon (4 squares) -->
+  <g fill="#FFFFFF">
+    <!-- Top-left square -->
+    <rect x="30" y="30" width="35" height="35" rx="2"/>
+    <!-- Top-right square -->
+    <rect x="75" y="30" width="35" height="35" rx="2"/>
+    <!-- Bottom-left square -->
+    <rect x="30" y="75" width="35" height="35" rx="2"/>
+    <!-- Bottom-right square -->
+    <rect x="75" y="75" width="35" height="35" rx="2"/>
+  </g>
+
+  <!-- Learning/Certification Badge -->
+  <circle cx="140" cy="140" r="25" fill="#50E6FF" opacity="0.2"/>
+  <circle cx="140" cy="140" r="20" fill="none" stroke="#FFFFFF" stroke-width="2"/>
+  <text x="140" y="148" font-size="16" font-weight="bold" fill="#FFFFFF" text-anchor="middle">✓</text>
+
+  <!-- Brand text below (optional background) -->
+</svg>

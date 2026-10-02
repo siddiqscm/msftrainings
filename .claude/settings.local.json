@@ -1,0 +1,25 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell(node --version)",
+      "PowerShell(winget --version)",
+      "PowerShell(winget install OpenJS.NodeJS)",
+      "PowerShell(npm --version)",
+      "PowerShell(Get-Process node -ErrorAction SilentlyContinue)",
+      "PowerShell(Get-Process node)",
+      "PowerShell(Stop-Process -Force)",
+      "PowerShell(head -5)",
+      "PowerShell(\\(Get-Content \"C:\\\\Users\\\\siddiq.mohammed\\\\OneDrive - JIVA Internet Solutions Private Ltd\\\\OFB\\\\banking-solutions-site\\\\app\\\\services\\\\page.tsx\" -TotalCount 20 | Out-String\\))",
+      "PowerShell(Stop-Process -Force -ErrorAction SilentlyContinue)",
+      "PowerShell(\\(Get-Content \"C:\\\\Users\\\\siddiq.mohammed\\\\OneDrive - JIVA Internet Solutions Private Ltd\\\\OFB\\\\banking-solutions-site\\\\app\\\\services\\\\page.tsx\" | Measure-Object -Line\\).Lines)",
+      "mcp__claude-in-chrome__tabs_context_mcp",
+      "mcp__claude-in-chrome__computer",
+      "mcp__claude-in-chrome__navigate",
+      "PowerShell(gh --version)",
+      "PowerShell(winget install GitHub.cli --accept-source-agreements --accept-package-agreements)",
+      "PowerShell(gh auth login)",
+      "PowerShell(& \"C:\\\\Program Files\\\\GitHub CLI\\\\gh.exe\" auth login)",
+      "PowerShell(winget install Git.Git --accept-source-agreements --accept-package-agreements -h)"
+    ]
+  }
+}
