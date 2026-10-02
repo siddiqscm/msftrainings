@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import CourseCard from '@/components/CourseCard';
+import CourseSearch from '@/components/CourseSearch';
 
 const courses = [
   {
@@ -105,6 +105,45 @@ const courses = [
     track: 'Microsoft 365',
   },
 ];
+
+const categoryByTrack: Record<string, string> = {
+  'Business Central': 'Dynamics 365 ERP',
+  'Supply Chain': 'Dynamics 365 ERP',
+  'Finance & Operations': 'Dynamics 365 ERP',
+  'Dynamics 365 CE': 'Dynamics 365 CE',
+  'Power Platform': 'Power Platform',
+  Azure: 'Azure',
+  'Microsoft 365': 'Microsoft 365',
+};
+
+// Extra search terms: product names, abbreviations and roles people actually type.
+const ERP = 'dynamics 365 d365 erp';
+const CE = 'dynamics 365 d365 crm ce customer engagement';
+const keywordsByCode: Record<string, string> = {
+  'MB-800': `${ERP} bc nav navision finance accounting functional consultant`,
+  'MB-820': `${ERP} bc nav al developer extensions programming technical`,
+  'MB-330': `${ERP} scm fno fo d365fo inventory warehouse procurement manufacturing production functional consultant`,
+  'MB-335': `${ERP} scm fno fo d365fo expert advanced manufacturing planning functional consultant`,
+  'MB-500': `${ERP} fno fo d365fo ax axapta x++ developer programming technical`,
+  'MB-700': `${ERP} fno fo d365fo ax axapta solution architect technical`,
+  'MB-910': `${CE} fundamentals beginner sales customer service field service customer insights`,
+  'MB-280': `${CE} sales marketing customer insights journeys functional consultant`,
+  'MB-230': `${CE} customer service contact center omnichannel functional consultant`,
+  'MB-240': `${CE} field service work orders scheduling functional consultant`,
+  'MB-260': `${CE} customer insights data cdp marketing analyst`,
+  'PL-200': `${CE} power platform power apps power automate dataverse functional consultant`,
+  'PL-400': `${CE} power platform power apps dataverse developer plugins pcf javascript c# technical`,
+  'PL-600': `${CE} power platform solution architect technical`,
+  'PL-900': 'power platform power apps power automate power bi copilot studio low code fundamentals beginner',
+  'AZ-900': 'azure cloud fundamentals beginner',
+  'MS-900': 'microsoft 365 m365 office 365 o365 teams sharepoint copilot fundamentals beginner',
+};
+
+const searchableCourses = courses.map((course) => ({
+  ...course,
+  category: categoryByTrack[course.track],
+  keywords: keywordsByCode[course.code] ?? '',
+}));
 
 const benefits = [
   {
@@ -249,7 +288,7 @@ export default function Home() {
       {/* Certification Overview */}
       <section className="py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
+          <div className="text-center mb-10">
             <h2 className="text-3xl sm:text-4xl font-bold text-navy-900 mb-4">
               Microsoft Certifications
             </h2>
@@ -258,11 +297,7 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {courses.map((course) => (
-              <CourseCard key={course.code} {...course} />
-            ))}
-          </div>
+          <CourseSearch courses={searchableCourses} />
 
           <div className="text-center mt-12">
             <Link
