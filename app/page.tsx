@@ -3,6 +3,24 @@ import CourseCard from '@/components/CourseCard';
 
 const courses = [
   {
+    code: 'AZ-900',
+    title: 'Azure Fundamentals',
+    shortDescription: 'Start your cloud journey. Core cloud concepts, Azure services, security, pricing and governance, with guided portal demos.',
+    track: 'Azure',
+  },
+  {
+    code: 'MS-900',
+    title: 'Microsoft 365 Fundamentals',
+    shortDescription: 'Understand Microsoft 365 apps, Teams, Copilot, identity, security, compliance and licensing in one focused course.',
+    track: 'Microsoft 365',
+  },
+  {
+    code: 'PL-900',
+    title: 'Power Platform Fundamentals',
+    shortDescription: 'Build apps, flows, reports and agents with Power Apps, Power Automate, Power BI and Copilot Studio in hands-on labs.',
+    track: 'Power Platform',
+  },
+  {
     code: 'MB-800',
     title: 'Business Central Functional Consultant',
     shortDescription: 'Master Microsoft Dynamics 365 Business Central with hands-on labs covering core functional concepts, implementation, and configuration.',
@@ -152,7 +170,7 @@ export default function Home() {
             </div>
             <div className="text-center">
               <div className="text-4xl mb-2">✅</div>
-              <p className="text-3xl sm:text-4xl font-bold text-blue-600 mb-2">6+</p>
+              <p className="text-3xl sm:text-4xl font-bold text-blue-600 mb-2">9+</p>
               <p className="text-sm text-slate-600 font-medium">Certification Tracks</p>
             </div>
             <div className="text-center">
@@ -190,7 +208,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl sm:text-4xl font-bold text-navy-900 mb-4">
-              Microsoft Dynamics 365 Certifications
+              Microsoft Certifications
             </h2>
             <p className="text-lg text-slate-600 max-w-2xl mx-auto">
               Choose from our comprehensive portfolio of hands-on certification training programs, delivered by industry experts.
@@ -287,7 +305,7 @@ export default function Home() {
             Ready to Get Certified?
           </h2>
           <p className="text-lg text-slate-200 mb-8 max-w-2xl mx-auto">
-            Start your journey to Microsoft Dynamics 365 certification today. Contact our training specialists for course schedules and customized corporate training options.
+            Start your journey to Microsoft certification today. Contact our training specialists for course schedules and customized corporate training options.
           </p>
           <Link
             href="/enquiry"

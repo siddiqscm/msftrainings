@@ -4,12 +4,15 @@ import { FormEvent, useState, Suspense } from 'react';
 import { useSearchParams } from 'next/navigation';
 
 const certifications = [
-  'MB-800 (Business Central Functional Consultant)',
-  'MB-820 (Business Central Developer)',
-  'MB-330 (Supply Chain Management Functional Consultant)',
-  'MB-335 (Supply Chain Management Expert)',
-  'MB-500 (Finance & Operations Developer)',
-  'MB-700 (Finance & Operations Solution Architect)',
+  { code: 'AZ-900', label: 'AZ-900 (Azure Fundamentals)' },
+  { code: 'MS-900', label: 'MS-900 (Microsoft 365 Fundamentals)' },
+  { code: 'PL-900', label: 'PL-900 (Power Platform Fundamentals)' },
+  { code: 'MB-800', label: 'MB-800 (Business Central Functional Consultant)' },
+  { code: 'MB-820', label: 'MB-820 (Business Central Developer)' },
+  { code: 'MB-330', label: 'MB-330 (Supply Chain Management Functional Consultant)' },
+  { code: 'MB-335', label: 'MB-335 (Supply Chain Management Expert)' },
+  { code: 'MB-500', label: 'MB-500 (Finance & Operations Developer)' },
+  { code: 'MB-700', label: 'MB-700 (Finance & Operations Solution Architect)' },
 ];
 
 const trainingTypes = [
@@ -81,7 +84,7 @@ function EnquiryFormContent() {
             Request Training
           </h1>
           <p className="text-xl text-slate-200 max-w-2xl">
-            Complete the form below to discuss your Microsoft Dynamics 365 certification training needs with our specialists.
+            Complete the form below to discuss your Microsoft certification training needs with our specialists.
           </p>
         </div>
       </section>
@@ -202,8 +205,8 @@ function EnquiryFormContent() {
                   >
                     <option value="">Select a certification...</option>
                     {certifications.map((cert) => (
-                      <option key={cert} value={cert}>
-                        {cert}
+                      <option key={cert.code} value={cert.code}>
+                        {cert.label}
                       </option>
                     ))}
                   </select>

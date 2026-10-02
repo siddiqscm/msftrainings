@@ -3,6 +3,153 @@ import Link from 'next/link';
 import { notFound } from 'next/navigation';
 
 const courseData: Record<string, any> = {
+  'az-900': {
+    code: 'AZ-900',
+    platform: 'Azure',
+    title: 'Microsoft Azure Fundamentals',
+    description: 'Build a solid foundation in cloud concepts and core Azure services. Ideal starting point for anyone beginning their Azure journey, technical or non-technical.',
+    fullDescription: `AZ-900 validates foundational knowledge of cloud concepts and Microsoft Azure. It is the recommended first step for anyone working with Azure, whether you are an administrator, developer, architect, or a business professional who needs to understand the cloud. This instructor-led course explains cloud computing models, the shared responsibility model and consumption-based pricing, then walks through the core Azure services for compute, networking, storage, identity and security. You will explore the Azure portal through guided demonstrations, estimate costs with the pricing and TCO calculators, and learn how governance tools such as Azure Policy, resource locks and Microsoft Purview keep environments compliant. The course closes with focused exam practice so you can sit the AZ-900 exam with confidence and move on to role-based Azure certifications.`,
+    industryApplications: [
+      { industry: 'Cloud Migration', value: 'Shared vocabulary for teams planning a move from on-premises to Azure' },
+      { industry: 'Sales & Pre-sales', value: 'Confidently discuss Azure services, pricing and value with customers' },
+      { industry: 'IT Operations', value: 'Foundation for Azure Administrator (AZ-104) and other role-based paths' },
+      { industry: 'Finance & Procurement', value: 'Understand subscriptions, cost management and consumption billing' },
+    ],
+    outcomes: [
+      'Explain cloud concepts, service models and deployment models',
+      'Describe core Azure compute, networking and storage services',
+      'Understand Azure identity, access and security fundamentals',
+      'Use Azure cost management and pricing tools',
+      'Describe Azure governance, compliance and monitoring tools',
+    ],
+    syllabus: [
+      {
+        module: 'Module 1: Cloud Concepts',
+        topics: ['What is cloud computing', 'Shared responsibility model', 'Public, private and hybrid cloud', 'IaaS, PaaS and SaaS', 'Consumption-based model'],
+      },
+      {
+        module: 'Module 2: Azure Architecture',
+        topics: ['Regions and availability zones', 'Subscriptions and management groups', 'Resource groups', 'Azure Resource Manager'],
+      },
+      {
+        module: 'Module 3: Compute and Networking',
+        topics: ['Virtual machines and scale sets', 'Containers and Azure Functions', 'App Service', 'Virtual networks, VPN Gateway and ExpressRoute', 'Azure DNS'],
+      },
+      {
+        module: 'Module 4: Storage',
+        topics: ['Storage accounts and redundancy', 'Blob, file, queue and table storage', 'Access tiers', 'Data migration options'],
+      },
+      {
+        module: 'Module 5: Identity, Access and Security',
+        topics: ['Microsoft Entra ID', 'Authentication, SSO and MFA', 'Conditional Access', 'Role-based access control', 'Zero Trust and defense in depth', 'Microsoft Defender for Cloud'],
+      },
+      {
+        module: 'Module 6: Management and Governance',
+        topics: ['Cost management and pricing calculator', 'Tags', 'Azure Policy and resource locks', 'Microsoft Purview', 'Azure Monitor, Advisor and Service Health', 'Exam preparation'],
+      },
+    ],
+    audience: 'IT professionals, business stakeholders, sales and pre-sales teams, students, and anyone new to Microsoft Azure.',
+    format: 'Instructor-led • 1-2 Days • Guided Portal Demos • Exam Practice',
+    prerequisites: 'None. General IT awareness helpful',
+  },
+  'ms-900': {
+    code: 'MS-900',
+    platform: 'Microsoft 365',
+    title: 'Microsoft 365 Fundamentals',
+    description: 'Understand the Microsoft 365 suite, from productivity and collaboration apps to security, compliance, licensing and support.',
+    fullDescription: `MS-900 validates foundational knowledge of Microsoft 365 as a cloud productivity platform. This course gives decision makers, IT staff and business users a clear picture of what Microsoft 365 offers and how it is secured, governed and licensed. You will tour the core apps and services, including Microsoft Teams, Exchange Online, SharePoint, OneDrive and Microsoft 365 Copilot, and see how endpoint management with Microsoft Intune keeps devices secure. The course then covers identity with Microsoft Entra ID, the Zero Trust approach, Microsoft Defender XDR and Microsoft Purview for compliance and data protection. Finally, it explains Microsoft 365 plans, licensing options, billing and support so you can choose the right subscriptions for your organization. Focused exam practice prepares you to pass MS-900 and continue to role-based paths such as Microsoft 365 Administrator (MS-102).`,
+    industryApplications: [
+      { industry: 'Modern Workplace', value: 'Plan adoption of Teams, SharePoint and OneDrive for hybrid work' },
+      { industry: 'Licensing & Procurement', value: 'Compare Microsoft 365 plans and choose the right subscriptions' },
+      { industry: 'Compliance-led Sectors', value: 'Understand Purview data protection for regulated industries' },
+      { industry: 'IT Support', value: 'Foundation for Microsoft 365 Administrator (MS-102) and Endpoint paths' },
+    ],
+    outcomes: [
+      'Describe cloud concepts and Microsoft 365 benefits',
+      'Explain Microsoft 365 apps, Teams, SharePoint and Copilot',
+      'Understand Microsoft Entra ID and identity concepts',
+      'Describe security, compliance and privacy capabilities',
+      'Compare Microsoft 365 licensing, pricing and support options',
+    ],
+    syllabus: [
+      {
+        module: 'Module 1: Cloud Concepts',
+        topics: ['Cloud service and deployment models', 'Benefits of SaaS', 'Microsoft 365 vs Office'],
+      },
+      {
+        module: 'Module 2: Microsoft 365 Apps and Services',
+        topics: ['Microsoft 365 Apps', 'Exchange Online, SharePoint and OneDrive', 'Microsoft Teams', 'Microsoft 365 Copilot', 'Microsoft Viva'],
+      },
+      {
+        module: 'Module 3: Endpoint and Admin Capabilities',
+        topics: ['Microsoft Intune', 'Windows 365 and Azure Virtual Desktop', 'Microsoft 365 admin center', 'Deployment and update channels'],
+      },
+      {
+        module: 'Module 4: Identity and Access',
+        topics: ['Microsoft Entra ID', 'Authentication and MFA', 'Conditional Access', 'Identity types and hybrid identity'],
+      },
+      {
+        module: 'Module 5: Security, Compliance and Privacy',
+        topics: ['Zero Trust', 'Microsoft Defender XDR', 'Microsoft Purview', 'Data loss prevention and sensitivity labels', 'Service Trust Portal'],
+      },
+      {
+        module: 'Module 6: Pricing, Licensing and Support',
+        topics: ['Microsoft 365 plans', 'Licensing and billing options', 'Support offerings and SLAs', 'Exam preparation'],
+      },
+    ],
+    audience: 'IT professionals, decision makers, procurement and licensing teams, and end users moving to Microsoft 365.',
+    format: 'Instructor-led • 1-2 Days • Live Tenant Walkthroughs • Exam Practice',
+    prerequisites: 'None. Familiarity with office productivity tools helpful',
+  },
+  'pl-900': {
+    code: 'PL-900',
+    platform: 'Power Platform',
+    title: 'Microsoft Power Platform Fundamentals',
+    description: 'Learn how Power Apps, Power Automate, Power BI and Copilot Studio work together to analyze data, automate processes and build business solutions.',
+    fullDescription: `PL-900 validates foundational knowledge of Microsoft Power Platform and its business value. In this hands-on course you will build real solutions rather than just read about them. You will start with the platform's architecture, Microsoft Dataverse, connectors and Power Fx, then create a canvas app and a model-driven app with Power Apps, automate approvals and notifications with Power Automate cloud flows, and turn data into interactive reports and dashboards with Power BI. You will also build a simple agent in Microsoft Copilot Studio and see how Copilot features speed up app and flow creation. Along the way the course covers environments, security and governance so that low-code adoption stays under control. Focused exam practice prepares you to pass PL-900 and continue to PL-200, PL-300 or PL-400.`,
+    industryApplications: [
+      { industry: 'Business Operations', value: 'Replace spreadsheets and emails with apps and automated workflows' },
+      { industry: 'Finance & Reporting', value: 'Self-service dashboards and analytics with Power BI' },
+      { industry: 'Customer Service', value: 'Agents and chat experiences with Copilot Studio' },
+      { industry: 'Dynamics 365 Teams', value: 'Extend Dynamics 365 using Dataverse and model-driven apps' },
+    ],
+    outcomes: [
+      'Describe the business value of Microsoft Power Platform',
+      'Understand Dataverse, connectors and Power Fx basics',
+      'Build a basic canvas and model-driven app with Power Apps',
+      'Create automated flows with Power Automate',
+      'Build reports and dashboards with Power BI and agents with Copilot Studio',
+    ],
+    syllabus: [
+      {
+        module: 'Module 1: Power Platform Business Value',
+        topics: ['Platform components', 'Copilot in Power Platform', 'Environments and admin center', 'Security and governance basics'],
+      },
+      {
+        module: 'Module 2: Data Foundations',
+        topics: ['Microsoft Dataverse tables, columns and relationships', 'Connectors and custom connectors', 'Power Fx basics'],
+      },
+      {
+        module: 'Module 3: Power Apps',
+        topics: ['Canvas apps', 'Model-driven apps', 'Forms, views and controls', 'Sharing apps'],
+      },
+      {
+        module: 'Module 4: Power Automate',
+        topics: ['Cloud flows and triggers', 'Approvals', 'Desktop flows (RPA) overview', 'Process mining overview'],
+      },
+      {
+        module: 'Module 5: Power BI',
+        topics: ['Connecting to data', 'Building reports and visuals', 'Dashboards', 'Publishing and sharing'],
+      },
+      {
+        module: 'Module 6: Copilot Studio',
+        topics: ['Creating an agent', 'Topics and knowledge sources', 'Publishing to channels', 'Exam preparation'],
+      },
+    ],
+    audience: 'Business users, analysts, citizen developers, functional consultants and IT professionals exploring low-code solutions.',
+    format: 'Instructor-led • 1-2 Days • Hands-on Build Labs • Exam Practice',
+    prerequisites: 'None. Basic Excel or data familiarity helpful',
+  },
   'mb-800': {
     code: 'MB-800',
     title: 'Microsoft Dynamics 365 Business Central Functional Consultant',
@@ -304,9 +451,9 @@ export async function generateMetadata({ params }: { params: { code: string } })
   }
 
   return {
-    title: `${course.code} - ${course.title} | Dynamics 365 Certification Training`,
+    title: `${course.code} - ${course.title} | ${course.platform || 'Dynamics 365'} Certification Training`,
     description: course.description,
-    keywords: `${course.code}, ${course.title}, Dynamics 365 training, Microsoft certification, hands-on course`,
+    keywords: `${course.code}, ${course.title}, ${course.platform || 'Dynamics 365'} training, Microsoft certification, hands-on course`,
     openGraph: {
       title: `${course.code} - ${course.title}`,
       description: course.description,

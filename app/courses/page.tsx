@@ -3,17 +3,62 @@ import Link from 'next/link';
 
 export const metadata: Metadata = {
   title: 'Microsoft Certification Courses | MSFT Trainings',
-  description: 'Comprehensive Dynamics 365 certification training programs: Business Central (MB-800, MB-820), Supply Chain Management (MB-330, MB-335), Finance & Operations (MB-500, MB-700). Instructor-led hands-on labs.',
-  keywords: 'Dynamics 365 courses, MB-800 training, MB-820 course, MB-330 certification, MB-335 expert, MB-500 developer, MB-700 architect, Microsoft Dynamics training',
+  description: 'Instructor-led Microsoft certification training: Azure Fundamentals (AZ-900), Microsoft 365 Fundamentals (MS-900), Power Platform Fundamentals (PL-900), and Dynamics 365 Business Central (MB-800, MB-820), Supply Chain Management (MB-330, MB-335), Finance & Operations (MB-500, MB-700).',
+  keywords: 'AZ-900 training, MS-900 training, PL-900 training, Azure Fundamentals, Microsoft 365 Fundamentals, Power Platform Fundamentals, Dynamics 365 courses, MB-800 training, MB-820 course, MB-330 certification, MB-335 expert, MB-500 developer, MB-700 architect',
   openGraph: {
     title: 'Microsoft Certification Courses | MSFT Trainings',
-    description: 'Hands-on Dynamics 365 certification training for all 6 exam codes. Business Central, Supply Chain Management, Finance & Operations.',
+    description: 'Hands-on Microsoft certification training across Azure, Microsoft 365, Power Platform and Dynamics 365.',
     type: 'website',
     url: 'https://msfttrainings.com/courses',
   },
 };
 
 const courseDetails = [
+  {
+    code: 'AZ-900',
+    title: 'Microsoft Azure Fundamentals',
+    description: 'Build a solid foundation in cloud concepts and core Azure services. Ideal starting point for anyone beginning their Azure journey, technical or non-technical.',
+    outcomes: [
+      'Explain cloud concepts, service models and deployment models',
+      'Describe core Azure compute, networking and storage services',
+      'Understand Azure identity, access and security fundamentals',
+      'Use Azure cost management and pricing tools',
+      'Describe Azure governance, compliance and monitoring tools',
+    ],
+    audience: 'IT professionals, business stakeholders, sales and pre-sales teams, students, and anyone new to Microsoft Azure.',
+    format: 'Instructor-led • 1-2 Days • Guided Portal Demos • Exam Practice',
+    prerequisites: 'None. General IT awareness helpful',
+  },
+  {
+    code: 'MS-900',
+    title: 'Microsoft 365 Fundamentals',
+    description: 'Understand the Microsoft 365 suite, from productivity and collaboration apps to security, compliance, licensing and support.',
+    outcomes: [
+      'Describe cloud concepts and Microsoft 365 benefits',
+      'Explain Microsoft 365 apps, Teams, SharePoint and Copilot',
+      'Understand Microsoft Entra ID and identity concepts',
+      'Describe security, compliance and privacy capabilities',
+      'Compare Microsoft 365 licensing, pricing and support options',
+    ],
+    audience: 'IT professionals, decision makers, procurement and licensing teams, and end users moving to Microsoft 365.',
+    format: 'Instructor-led • 1-2 Days • Live Tenant Walkthroughs • Exam Practice',
+    prerequisites: 'None. Familiarity with office productivity tools helpful',
+  },
+  {
+    code: 'PL-900',
+    title: 'Microsoft Power Platform Fundamentals',
+    description: 'Learn how Power Apps, Power Automate, Power BI and Copilot Studio work together to analyze data, automate processes and build business solutions.',
+    outcomes: [
+      'Describe the business value of Microsoft Power Platform',
+      'Understand Dataverse, connectors and Power Fx basics',
+      'Build a basic canvas and model-driven app with Power Apps',
+      'Create automated flows with Power Automate',
+      'Build reports and dashboards with Power BI and agents with Copilot Studio',
+    ],
+    audience: 'Business users, analysts, citizen developers, functional consultants and IT professionals exploring low-code solutions.',
+    format: 'Instructor-led • 1-2 Days • Hands-on Build Labs • Exam Practice',
+    prerequisites: 'None. Basic Excel or data familiarity helpful',
+  },
   {
     code: 'MB-800',
     title: 'Microsoft Dynamics 365 Business Central Functional Consultant',
@@ -115,7 +160,7 @@ export default function CoursesPage() {
       <section className="bg-blue-900 text-white py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h1 className="text-4xl sm:text-5xl font-bold mb-4">
-            Microsoft Dynamics 365 Certification Courses
+            Microsoft Certification Courses
           </h1>
           <p className="text-xl text-slate-200 max-w-2xl">
             Comprehensive hands-on training programs delivered by certified instructors to ensure your success.
@@ -138,7 +183,9 @@ export default function CoursesPage() {
                     {course.code}
                   </p>
                   <h2 className="text-2xl sm:text-3xl font-bold text-blue-900 mb-3">
-                    {course.shortTitle || course.title}
+                    <Link href={`/courses/${course.code.toLowerCase()}`} className="hover:text-blue-700">
+                      {course.shortTitle || course.title}
+                    </Link>
                   </h2>
                   <p className="text-slate-600 leading-relaxed">
                     {course.description}

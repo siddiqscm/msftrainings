@@ -11,7 +11,7 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   title: 'MSFT Trainings | Your Path to Mastering Microsoft',
   description: 'Instructor-led Microsoft certification training across Azure, Microsoft 365, Power Platform, Dynamics 365 and Security. Hands-on labs, exam-oriented curriculum and Certified Corporate Trainers.',
-  keywords: 'Microsoft certification training, Azure training, Microsoft 365 training, Power Platform training, Dynamics 365 training, Microsoft Security training, MB-800, MB-820, MB-330, MB-335, MB-500, MB-700',
+  keywords: 'Microsoft certification training, Azure training, Microsoft 365 training, Power Platform training, Dynamics 365 training, Microsoft Security training, AZ-900, MS-900, PL-900, MB-800, MB-820, MB-330, MB-335, MB-500, MB-700',
   authors: [{ name: 'MSFT Trainings' }],
   openGraph: {
     type: 'website',
@@ -40,7 +40,7 @@ export default function RootLayout({
     name: 'MSFT Trainings',
     url: 'https://msfttrainings.com',
     logo: 'https://msfttrainings.com/logo.svg',
-    description: 'Enterprise-grade Microsoft Dynamics 365 certification training delivered by Certified Corporate Trainers.',
+    description: 'Instructor-led Microsoft certification training across Azure, Microsoft 365, Power Platform and Dynamics 365, delivered by Certified Corporate Trainers.',
     sameAs: [
       'https://www.linkedin.com/company/msfttrainings',
       'https://www.facebook.com/msfttrainings',
@@ -57,6 +57,27 @@ export default function RootLayout({
     '@context': 'https://schema.org',
     '@type': 'ItemList',
     itemListElement: [
+      {
+        '@type': 'Course',
+        name: 'AZ-900: Microsoft Azure Fundamentals',
+        description: 'Cloud concepts, core Azure services, security, pricing and governance.',
+        provider: { '@type': 'Organization', name: 'MSFT Trainings' },
+        url: 'https://msfttrainings.com/courses/az-900',
+      },
+      {
+        '@type': 'Course',
+        name: 'MS-900: Microsoft 365 Fundamentals',
+        description: 'Microsoft 365 apps and services, identity, security, compliance and licensing.',
+        provider: { '@type': 'Organization', name: 'MSFT Trainings' },
+        url: 'https://msfttrainings.com/courses/ms-900',
+      },
+      {
+        '@type': 'Course',
+        name: 'PL-900: Microsoft Power Platform Fundamentals',
+        description: 'Power Apps, Power Automate, Power BI and Copilot Studio fundamentals with hands-on labs.',
+        provider: { '@type': 'Organization', name: 'MSFT Trainings' },
+        url: 'https://msfttrainings.com/courses/pl-900',
+      },
       {
         '@type': 'Course',
         name: 'MB-800: Business Central Functional Consultant',
@@ -107,7 +128,7 @@ export default function RootLayout({
     '@type': 'LocalBusiness',
     name: 'MSFT Trainings',
     image: 'https://msfttrainings.com/logo.svg',
-    description: 'Microsoft Dynamics 365 Certification Training Provider',
+    description: 'Microsoft Certification Training Provider',
     address: {
       '@type': 'PostalAddress',
       streetAddress: 'Your Street Address',
